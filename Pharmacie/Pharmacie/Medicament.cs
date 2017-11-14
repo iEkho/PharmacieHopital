@@ -20,6 +20,17 @@ namespace Pharmacie
             this.prixUnitaire = prixUnitaire;
             this.description = description;
         }
+        public Medicament()
+        {
+
+        }
+        public void setMedicament(Int32 id, String libelle, Double prixUnitaire, String description)
+        {
+            this.id = id;
+            this.libelle = libelle;
+            this.prixUnitaire = prixUnitaire;
+            this.description = description;
+        }
         public override string ToString()
         {
             return "Medicament : " + libelle + " prix unitaire : " + prixUnitaire + " description : " + description;

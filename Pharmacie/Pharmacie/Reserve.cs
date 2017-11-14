@@ -17,6 +17,15 @@ namespace Pharmacie
             this.id = id;
             this.libelle = libelle;
         }
+        public Reserve()
+        {
+
+        }
+        public void setReserve(Int32 id, String libelle)
+        {
+            this.id = id;
+            this.libelle = libelle;
+        }
 
         public override string ToString()
         {

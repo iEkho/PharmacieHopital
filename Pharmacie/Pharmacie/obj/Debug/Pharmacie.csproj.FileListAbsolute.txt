@@ -1,2 +1,3 @@
 G:\sio2\Desprez\Pharmacie\Pharmacie\bin\Debug\Pharmacie.exe.config
 G:\sio2\Desprez\PharmacieHopital\pharmacieHopital\Pharmacie\Pharmacie\bin\Debug\Pharmacie.exe.config
+G:\sio2\Desprez\PharmacieHopital\Pharmacie\Pharmacie\bin\Debug\Pharmacie.exe.config
