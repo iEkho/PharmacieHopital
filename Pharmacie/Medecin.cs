@@ -30,10 +30,6 @@ namespace Pharmacie
             this.telephone = "";
             this.service = null;
         }
-        public Int32 getId()
-        {
-            return id;
-        }
         public void setMedecin(Int32 id, String nom, String prenom, String mail, String telephone, Service service)
         {
             this.id = id;

@@ -9,6 +9,12 @@ namespace Pharmacie
     class Medicament
     {
         private Int32 id;
+
+        public Int32 Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
         private String libelle, description;
         private Double prixUnitaire;
 
@@ -30,10 +36,6 @@ namespace Pharmacie
             this.libelle = libelle;
             this.prixUnitaire = prixUnitaire;
             this.description = description;
-        }
-        public Int32 getIdMedicament()
-        {
-            return id;
         }
         public override string ToString()
         {

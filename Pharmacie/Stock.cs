@@ -18,28 +18,6 @@ namespace Pharmacie
             this.leMedicament = leMedicament;
             this.laReserve = laReserve;
         }
-        public Stock()
-        {
-
-        }
-        public void setStock(Int32 quantite, Medicament leMedicament, Reserve laReserve)
-        {
-            this.quantite = quantite;
-            this.leMedicament = leMedicament;
-            this.laReserve = laReserve;
-        }
-        public Reserve getlaReserve()
-        {
-            return laReserve;
-        }
-        public Int32 getQuantite()
-        {
-            return quantite;
-        }
-        public Medicament getleMedicament()
-        {
-            return leMedicament;
-        }
 
         public override string ToString()
         {

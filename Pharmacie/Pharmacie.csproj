@@ -46,7 +46,19 @@
   <ItemGroup>
     <Compile Include="BonCommande.cs" />
     <Compile Include="BonCommandeDAO.cs" />
+    <Compile Include="ControleStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControleStock.Designer.cs">
+      <DependentUpon>ControleStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO.cs" />
+    <Compile Include="Dépôt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dépôt.Designer.cs">
+      <DependentUpon>Dépôt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,17 +70,36 @@
     <Compile Include="Medicament.cs" />
     <Compile Include="MedicamentDAO.cs" />
     <Compile Include="Passerelle.cs" />
+    <Compile Include="PostConnexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostConnexion.Designer.cs">
+      <DependentUpon>PostConnexion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reserve.cs" />
-    <Compile Include="Retrait.cs" />
-    <Compile Include="RetraitDAO.cs" />
+    <Compile Include="Retrait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retrait.Designer.cs">
+      <DependentUpon>Retrait.cs</DependentUpon>
+    </Compile>
     <Compile Include="Service.cs" />
     <Compile Include="Stock.cs" />
     <Compile Include="StockDAO.cs" />
     <Compile Include="Utilisateur.cs" />
+    <EmbeddedResource Include="ControleStock.resx">
+      <DependentUpon>ControleStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dépôt.resx">
+      <DependentUpon>Dépôt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostConnexion.resx">
+      <DependentUpon>PostConnexion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,6 +110,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Retrait.resx">
+      <DependentUpon>Retrait.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

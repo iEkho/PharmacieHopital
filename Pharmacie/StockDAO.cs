@@ -16,24 +16,15 @@ namespace Pharmacie
             this.leStock = leStock;
         }
 
-        public override bool update(Stock nvStock)
+        public override bool update(Int32 nb)
         {
-           Int32 qtte= nvStock.getQuantite()+leStock.getQuantite();
-           string requete = "update Stock set quantite=" + qtte + " where idReserve=" + leStock.getlaReserve().getIdReserve() + " and idMedicament=" + leStock.getleMedicament().getIdMedicament();
-            SqlCommand commande = new SqlCommand(requete, seConnecter());
-            Int32 nb = commande.ExecuteNonQuery();
-            if (nb != 0)
-            {
-                return true;
-            }
-            else { return false; }
-        } 
+            
+        }
         public override Stock find(int idReserve, int idMedicament)
         {
             string requete = "select * from Stock join Medicament on Stock.idMedicament=Medicament.id join Reserve on Stock.idReserve=Reserve.id where idReserve=" + idReserve + " AND idMedicament=" + idMedicament;
             SqlCommand commande = new SqlCommand(requete, seConnecter());
             SqlDataReader resultat = commande.ExecuteReader();
-            Stock leStock = new Stock();
             while (resultat.Read())
             {
                 int IDReserve = (int)resultat["idReserve"];
@@ -45,9 +36,7 @@ namespace Pharmacie
                 string description = (string)resultat["description"];
                 int idReserv = (int)resultat["Reserve.id"];
                 string nom = (string)resultat["nom"];
-                leStock.setStock(quantite, new Medicament(idMedoc,libelle,prixUnitaire,description), new Reserve(idReserv,nom));
             }
-            return leStock;
         }
     }
 }
