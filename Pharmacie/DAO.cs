@@ -34,5 +34,6 @@ namespace Pharmacie
         public abstract T find(Int32 id);
         public abstract Boolean update(T objet);
         public abstract Boolean delete(T objet);
+        public abstract Boolean update(Int32 qtte);
     }
 }

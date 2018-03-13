@@ -20,6 +20,10 @@ namespace Pharmacie
             this.mail = mail;
             this.MDP = MDP;
         }
+        public Int32 getId()
+        {
+            return id;
+        }
 
         public override string ToString()
         {
