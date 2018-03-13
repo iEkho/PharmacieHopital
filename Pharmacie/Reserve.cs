@@ -26,7 +26,10 @@ namespace Pharmacie
             this.id = id;
             this.libelle = libelle;
         }
-
+        public Int32 getIdReserve()
+        {
+            return id;
+        }
         public override string ToString()
         {
             return "Nom : " + libelle;

@@ -31,6 +31,10 @@ namespace Pharmacie
             this.prixUnitaire = prixUnitaire;
             this.description = description;
         }
+        public Int32 getIdMedicament()
+        {
+            return id;
+        }
         public override string ToString()
         {
             return "Medicament : " + libelle + " prix unitaire : " + prixUnitaire + " description : " + description;
